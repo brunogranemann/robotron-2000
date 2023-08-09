@@ -29,6 +29,11 @@ main {
     gap: 1vw;
 }
 
+.botao {
+    background-color: transparent;
+    border: none;
+}
+
 .robotron {
     background: url(../img/estrutura.png) no-repeat;
     background-position: center center;

@@ -59,3 +59,27 @@ function atualizaDados(operacao, peca) {
         }
     });
 }
+
+const robo = document.querySelector("[data-robo]")
+const cores = [
+    "Azul",
+    "Amarelo",
+    "Branco",
+    "Preto",
+    "Rosa",
+    "Vermelho"
+]
+let contador = 0
+
+robo.addEventListener("click", () => {
+    trocaRobo()
+})
+
+function trocaRobo(cor) {
+    if (contador < 5) {
+        contador += 1
+    } else {
+        contador = 0
+    }
+    robo.src="img/Robotron 2000 - " + cores[contador] + ".png"
+}
